@@ -7,19 +7,19 @@ const Header = () => {
     const [showMenuMobile, setShowMenuMobile] = useState(false)
 
     return (
-        <div className='p-4 fixed flex items-center justify-between w-screen pr-10 bg-[#1E1E1E] border-[#383838] border-b-[2px] z-10'>
-            <div>
-                <Image src="/logo-plan.png" alt="" width={80} height={80} />
-            </div>
+        <div className='p-4 fixed flex items-center justify-between w-screen pr-10 bg-[#1E1E1E] border-[#383838] border-b-[2px] z-10 lg:w-[250px] lg:p-14'>
+            <Link href="/">
+                <Image className='lg:scale-150' src="/logo-plan.png" alt="" width={80} height={80} />
+            </Link>
 
             <div>
                 <button
                     onClick={() => setShowMenuMobile(!showMenuMobile)}
-                    className="md:hidden text-2xl bg-[#3E3E3E] hover:bg-[#363636] w-[40px] h-[40px] flex items-center justify-center rounded-full"
+                    className="lg:hidden text-2xl bg-[#3E3E3E] hover:bg-[#363636] w-[40px] h-[40px] flex items-center justify-center rounded-full"
                 ><FaBars /></button>
 
-                <div className={`${showMenuMobile ? '' : 'hidden'} md:block absolute top-[79px] right-0 divide-y-2 border-[2px] border-[#383838] divide-[#383838] bg-[#1E1E1E] max-w-[300px]`}>
-                    <nav className='flex flex-col text-white px-12'>
+                <div className={`${showMenuMobile ? '' : 'hidden'} lg:block absolute top-[79px] right-0 divide-y-2 border-[2px] border-[#383838] divide-[#383838] bg-[#1E1E1E] max-w-[300px] lg:max-w-[260px] lg:left-0 lg:top-[150px] lg:border-none`}>
+                    <nav className='flex flex-col text-white px-12 lg:px-10 lg:h-screen lg:justify-center lg:mt-[-100px]'>
                         <ul>
                             <Link
                                 onClick={() => setShowMenuMobile(!showMenuMobile)}
@@ -59,7 +59,7 @@ const Header = () => {
                         </ul>
                     </nav>
 
-                    <div className='text-white font-light text-2xl pl-8 pr-10 flex items-center'>
+                    <div className='text-white font-light text-2xl pl-8 pr-10 flex items-center lg:mt-[-78%]'>
                         <Link
                             onClick={() => setShowMenuMobile(!showMenuMobile)}
                             className='relative w-[170px] hover:text-[#b4b4b4] py-10'

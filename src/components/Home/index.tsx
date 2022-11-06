@@ -3,9 +3,9 @@ import Link from "next/link"
 
 const Home = () => {
     return (
-        <section className="flex flex-col sm:flex-row items-center">
+        <section className="flex flex-col items-center md:flex-row lg:pl-[250px] md:justify-center">
             <Image
-                className="p-4 rounded-[1.3rem] pt-[100px]"
+                className="p-4 rounded-[1.3rem] pt-[100px] md:max-w-[400px]"
                 src="/metaverse-mobile.webp"
                 width={558}
                 height={649}
@@ -13,14 +13,14 @@ const Home = () => {
                 alt=""
             />
 
-            <div className="p-7 text-[#F8F9FA] flex flex-col items-start">
+            <div className="p-7 text-[#F8F9FA] flex flex-col items-start max-w-[575px] md:items-center md:mt-[80px] md:max-w-[350px]">
                 <span className="bg-[#F8F9FA] text-[#3b3b3b] text-sm px-2 py-[1px] font-bold">PLAN</span>
 
                 <h2 className="text-3xl my-[30px]">METAVERSO Plan</h2>
 
                 <p>Entre agora em nosso espaço no Metaverso e conheça vários projetos e cases do Grupo Plan.</p>
                 <Link
-                    className="bg-[#212529] hover:text-[#9c9c9c] text-white text-sm font-bold rounded px-[7px] py-[2px] mb-[15px]"
+                    className="bg-[#212529] hover:text-[#9c9c9c] text-white text-sm font-bold rounded px-[7px] py-[2px] mb-[15px] md:mt-[15px]"
                     href="https://hubs.mozilla.com/aFKZGFg/grupo-plan-metaverso"
                     target="_blank"
                 >METAVERSO Plan</Link>
